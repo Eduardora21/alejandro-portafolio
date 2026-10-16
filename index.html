@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Ramírez | Docente de Inglés & Escritor</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fuentes Google: Playfair Display (editorial) y Plus Jakarta Sans (lectura limpia) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0f172a',      // Slate oscuro / Azul medianoche
+              card: '#1e293b',      // Contenedores oscuros
+              accent: '#d97706',    // Ámbar / Dorado literario
+              accentHover: '#b45309',
+              light: '#f8fafc',     // Blanco roto / Papel
+              softText: '#94a3b8'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-accent/30">
+
+  <!-- Navegación -->
+  <nav class="fixed top-0 w-full bg-brand-dark/90 backdrop-blur-md border-b border-slate-800 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
+      
+      <!-- Logo / Firma -->
+      <a href="#inicio" class="flex items-center gap-2 shrink-0">
+        <span class="w-8 h-8 rounded-full bg-brand-accent/20 border border-brand-accent/40 flex items-center justify-center font-serif text-brand-accent font-bold text-sm">
+          AR
+        </span>
+        <span class="font-serif font-bold text-base sm:text-lg text-slate-100 tracking-wide">
+          Alejandro Ramírez
+        </span>
+      </a>
+
+      <!-- Menú de Enlaces -->
+      <div class="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-sm font-medium text-brand-softText overflow-x-auto py-1">
+        <a href="#inicio" class="hover:text-brand-accent transition-colors whitespace-nowrap">Inicio</a>
+        <a href="#ingles" class="hover:text-brand-accent transition-colors whitespace-nowrap">Clases de Inglés</a>
+        <a href="#literatura" class="hover:text-brand-accent transition-colors whitespace-nowrap">Letras & Poesía</a>
+        <a href="#contacto" class="hover:text-brand-accent transition-colors whitespace-nowrap">Contacto</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="min-h-screen flex items-center justify-center pt-20 px-6">
+    <div class="max-w-3xl mx-auto text-center space-y-6">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-xs text-brand-softText">
+        <span>♟️</span>
+        <span>Docente de Lengua Extranjera &amp; Poeta</span>
+      </div>
+
+      <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
+        El lenguaje como puente <br class="hidden sm:inline"> y las palabras como arte.
+      </h1>
+
+      <blockquote class="italic text-brand-softText font-serif text-base sm:text-lg max-w-xl mx-auto border-l-2 border-brand-accent/60 pl-4 py-1">
+        “No soy de aquí, ni soy de allá. Encuentro en la enseñanza una forma de conectar realidades y en la poesía, una ventana a la condición humana.”
+      </blockquote>
+
+      <!-- Botones de Acción hacia las 2 Áreas -->
+      <div class="pt-4 flex flex-wrap justify-center gap-4">
+        <a href="#ingles" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-amber-500/10 text-sm flex items-center gap-2">
+          <span>🎓</span> Clases de Inglés (\$10/h)
+        </a>
+        <a href="#literatura" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-6 py-3 rounded-xl font-medium transition-all text-sm flex items-center gap-2">
+          <span>📜</span> Explorar Textos Literarios
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 1: FACETA INGLÉS -->
+  <section id="ingles" class="py-20 px-6 bg-slate-900/60 border-t border-slate-800">
+    <div class="max-w-5xl mx-auto space-y-12">
+      
+      <div class="text-center space-y-3">
+        <span class="text-brand-accent text-xs font-bold uppercase tracking-widest">Metodología & Formación</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Aprende Inglés con Confianza</h2>
+        <p class="text-brand-softText text-sm sm:text-base max-w-2xl mx-auto">
+          Clases privadas en línea, 100% personalizadas según tu nivel, ritmo y metas profesionales o cotidianas.
+        </p>
+      </div>
+
+      <!-- Tarjeta Principal con Propuesta de Valor -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Beneficios -->
+        <div class="md:col-span-2 bg-brand-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-6">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <span>💻</span> Formato y Modalidad
+          </h3>
+
+          <div class="grid sm:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-300">
+            <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50 space-y-1">
+              <p class="font-bold text-white flex items-center gap-2"><span>🎯</span> 100% Personalizadas</p>
+              <p class="text-brand-softText">Alineadas a tus objetivos: conversación fluida, entrevistas de trabajo o bases gramaticales.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50 space-y-1">
+              <p class="font-bold text-white flex items-center gap-2"><span>🕒</span> Horarios Flexibles</p>
+              <p class="text-brand-softText">Coordinación de sesiones según tu zona horaria y disponibilidad semanal.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50 space-y-1">
+              <p class="font-bold text-white flex items-center gap-2"><span>📹</span> Vía Google Meet</p>
+              <p class="text-brand-softText">Sesiones directas sin necesidad de descargas pesadas ni plataformas complicadas.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/50 space-y-1">
+              <p class="font-bold text-white flex items-center gap-2"><span>🌎</span> Para la Comunidad Migrante</p>
+              <p class="text-brand-softText">Enfoque práctico pensado para latinoamericanos residiendo en EE. UU., Europa o con planes de viaje.</p>
+            </div>
+          </div>
+
+          <div class="pt-2 flex items-center gap-3 text-xs text-brand-softText">
+            <span class="text-emerald-400 font-bold">✓ Sin costos ocultos</span>
+            <span>•</span>
+            <span>Materiales de apoyo incluidos</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Precio & Contacto -->
+        <div class="bg-gradient-to-b from-brand-card to-slate-900 p-6 sm:p-8 rounded-2xl border border-brand-accent/30 flex flex-col justify-between space-y-6 text-center">
+          <div class="space-y-2">
+            <span class="text-xs uppercase font-bold text-brand-accent tracking-wider">Tarifa Oficial</span>
+            <div class="font-serif text-5xl font-bold text-white">
+              \$10 <span class="text-sm font-sans font-normal text-brand-softText">/ hora</span>
+            </div>
+            <p class="text-xs text-brand-softText pt-2">
+              Práctica oral activa, retroalimentación en tiempo real y dinámicas adaptadas.
+            </p>
+          </div>
+
+          <a href="https://wa.me/50575326342?text=Hola%20Alejandro,%20quisiera%20agendar%20mi%20primera%20clase%20privada%20de%20ingl%C3%A9s." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-all shadow-md">
+            <span>💬</span> Agendar Primera Clase
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: FACETA LITERARIA & POESÍA -->
+  <section id="literatura" class="py-20 px-6 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto space-y-12">
+      
+      <div class="text-center space-y-3">
+        <span class="text-brand-accent text-xs font-bold uppercase tracking-widest">Producción Literaria</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Voces, Ensayos & Poemas</h2>
+        <p class="text-brand-softText text-sm max-w-xl mx-auto">
+          Reflexiones escritas sobre el entendimiento, los límites de la mente y la experiencia existencial.
+        </p>
+      </div>
+
+      <!-- Tarjeta Poema: La Condición Humana -->
+      <div class="bg-brand-card/70 border border-slate-800 rounded-2xl p-6 sm:p-10 space-y-6 shadow-xl relative overflow-hidden">
+        
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-4">
+          <div>
+            <span class="text-[11px] font-mono text-brand-accent uppercase tracking-wider">Revista Cultural La Vasija • Entrega 20</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-100">La Condición Humana</h3>
+          </div>
+          <span class="text-xs font-serif italic text-brand-softText">Por A.R</span>
+        </div>
+
+        <!-- Cuerpo del Poema -->
+        <div class="font-serif text-slate-300 text-sm sm:text-base leading-relaxed space-y-4 max-w-2xl mx-auto italic py-2">
+          <p>
+            Complejos y sencillos, así podríamos describirnos,<br>
+            sintetizarnos, inclusive, en el cúmulo de emociones<br>
+            que de a poco nos aquejan hasta el desvelo.
+          </p>
+          <p>
+            Condicionados por nuestros límites de pensamiento o entendimiento,<br>
+            por los temores y el afecto.
+          </p>
+          <p>
+            Sé muy bien que nuestra condición a veces se expresa a través del llanto,<br>
+            sin importar que este sea por dolor, felicidad, amor o soledad.
+          </p>
+          <p>
+            Sé que soy humano porque río, gozo; soy humano porque, si no lo fuera,<br>
+            este vacío en mi pecho, al que conozco como sufrimiento, no tendría<br>
+            cabida en mi sentir.
+          </p>
+          <p>
+            Y si algo he de confesar, querido lector, es que preferiría la inexistencia misma<br>
+            antes que la consciencia del ser.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-brand-softText">
+          <span>Inspirado en la pintura de Robert Delaunay</span>
+          <span class="font-bold text-slate-400">A.R</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto" class="py-20 px-6 bg-slate-900/60 border-t border-slate-800">
+    <div class="max-w-2xl mx-auto space-y-8">
+      
+      <div class="text-center space-y-2">
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white">Canales de Comunicación</h2>
+        <p class="text-brand-softText text-xs sm:text-sm">Coordina clases privadas o mantente en contacto para lecturas y proyectos.</p>
+      </div>
+
+      <!-- Botones Redes Sociales y Chat -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-medium text-center">
+        <a href="https://wa.me/50575326342?text=Hola%20Alejandro,%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo." target="_blank" class="p-3.5 rounded-xl bg-slate-800 hover:bg-emerald-600/30 border border-slate-700 hover:border-emerald-500/50 text-slate-200 transition-all">
+          <p class="font-bold text-emerald-400">WhatsApp</p>
+          <p class="text-[11px] text-brand-softText">+505 7532 6342</p>
+        </a>
+        <a href="https://www.instagram.com/ramirez98.16" target="_blank" class="p-3.5 rounded-xl bg-slate-800 hover:bg-pink-600/20 border border-slate-700 hover:border-pink-500/50 text-slate-200 transition-all">
+          <p class="font-bold text-pink-400">Instagram</p>
+          <p class="text-[11px] text-brand-softText">@ramirez98.16</p>
+        </a>
+        <a href="https://www.facebook.com/ramirez.alejandro.543" target="_blank" class="p-3.5 rounded-xl bg-slate-800 hover:bg-blue-600/20 border border-slate-700 hover:border-blue-500/50 text-slate-200 transition-all">
+          <p class="font-bold text-blue-400">Facebook</p>
+          <p class="text-[11px] text-brand-softText">Alejandro Ramírez</p>
+        </a>
+      </div>
+
+      <!-- Formulario Directo (Envío mailto) -->
+      <div class="bg-brand-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
+        <h3 class="text-xs font-bold text-brand-accent uppercase tracking-wider text-center">Enviar Mensaje Rápido</h3>
+        
+        <form onsubmit="enviarMensaje(event)" class="space-y-4 text-xs">
+          <div>
+            <label for="asunto" class="block font-semibold text-slate-300 mb-1">Motivo o Asunto</label>
+            <input type="text" id="asunto" required placeholder="Ej. Consulta sobre clases de inglés / Lectura de poesía" class="w-full p-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 focus:outline-none focus:border-brand-accent transition-colors">
+          </div>
+
+          <div>
+            <label for="cuerpo" class="block font-semibold text-slate-300 mb-1">Detalles del Mensaje</label>
+            <textarea id="cuerpo" rows="4" required placeholder="Escribe tu consulta o propuesta..." class="w-full p-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 focus:outline-none focus:border-brand-accent transition-colors resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-bold py-3 rounded-xl transition-all shadow-md">
+            Abrir Correo para Enviar
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-xs text-brand-softText border-t border-slate-800/80">
+    © Alejandro Ramírez — Docencia en Lengua Extranjera &amp; Creación Literaria
+  </footer>
+
+  <!-- Script para mailto dinámico -->
+  <script>
+    function enviarMensaje(event) {
+      event.preventDefault();
+      const asunto = encodeURIComponent(document.getElementById('asunto').value);
+      const cuerpo = encodeURIComponent(document.getElementById('cuerpo').value);
+      // Reemplaza por el correo real de Alejandro cuando te lo proporcione
+      const email = 'ramirez98.16@gmail.com';
+
+      window.location.href = `mailto:${email}?subject=${asunto}&body=${cuerpo}`;
+    }
+  </script>
+
+</body>
+</html>
